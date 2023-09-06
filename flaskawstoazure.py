@@ -24,6 +24,6 @@ def vm_tier_aws(memory=None, core=None):
         return f"Available configuration in AZURE: Memory:{config['Memory']}, Core:{config['Core']}, Tiers:{config['Tier']},{','.join(tiers_config)}"
     
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
 
    
